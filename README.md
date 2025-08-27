@@ -6,6 +6,13 @@ According to the PWC MSME Survey 2024, there’s an estimate of $32.2billion, an
 
 - Aggregates SME data (CAC registration, bank transactions, POS sales, invoices, tax records).
 - Provides each SME with a **“Trust Score”** (creditworthiness rating).
-- Offers a **dashboard + API** for banks, fintech's, and development finance institutions to instantly check SME credit risk before lending.
+- Offers a **dashboard + API** for banks, fintechs, and development finance institutions to instantly check SME credit risk before lending.
 - Helps government programs disburse funds transparently.
 
+## Product MVP
+
+- Simple backend SQL SERVER DATABASE to store the **core entities (tables)** that reflect key parts of how SMEs interact with credit providers, why loans are approved/denied, and how repayment is tracked.
+- **SME Trust Score** (simple rules-based at first).
+- Manually insert the MSME into the database (at first)
+- Simple interface where banks, lenders, and other entities can view and access MSMES data, including core entities.
+- Data sources: CAC API, Mono/Okra (bank APIs), POS/ POS/e-commerce data. Howeve,r dummy data would be used to test MVP.
