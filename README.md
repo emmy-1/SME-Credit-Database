@@ -12,7 +12,7 @@ According to the PWC MSME Survey 2024, there’s an estimate of $32.2billion, an
 - **SME Trust Score** (simple rules-based at first).
 - Manually insert the MSME into the database (at first)
 - Simple interface where banks, lenders, and other entities can view and access MSMES data, including core entities.
-- Data sources: CAC API, Mono/Okra (bank APIs), POS/ POS/e-commerce data. Howeve,r dummy data would be used to test MVP.
+- Data sources: CAC API, Mono/Okra (bank APIs), POS/ POS/e-commerce data. However, the dummy data would be used to test MVP.
 
 ## IMPACT
 - Unlocks **billions in financing** for small businesses.
