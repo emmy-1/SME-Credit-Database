@@ -21,4 +21,5 @@ According to the PWC MSME Survey 2024, there’s an estimate of $32.2billion, an
 - Drives **industrial growth** by helping SMEs scale into larger enterprises.
 - Reduces default risk for lenders → increases confidence in Nigeria’s SME sector.
 ---
-## 🏗️ Database Schema
+## 🏗️ Sketch ERD (Entity Relationship Diagram)
+
