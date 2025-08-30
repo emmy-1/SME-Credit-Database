@@ -1,0 +1,255 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="3134" dy="1358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="C-vyLk0tnHw3VtMMgP7b-23" value="Small_Meduim_Enterprice" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="325" width="420" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="C-vyLk0tnHw3VtMMgP7b-24" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="C-vyLk0tnHw3VtMMgP7b-23" vertex="1">
+          <mxGeometry y="30" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C-vyLk0tnHw3VtMMgP7b-25" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="C-vyLk0tnHw3VtMMgP7b-24" vertex="1">
+          <mxGeometry width="30.000000000000114" height="30" as="geometry">
+            <mxRectangle width="30.000000000000114" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-vyLk0tnHw3VtMMgP7b-26" value="SME_ID int  INDENTITY&#xa;(1,1) CLUSTERED INDEX " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=1;fontSize=11;" parent="C-vyLk0tnHw3VtMMgP7b-24" vertex="1">
+          <mxGeometry x="30.000000000000114" width="389.9999999999999" height="30" as="geometry">
+            <mxRectangle width="389.9999999999999" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-vyLk0tnHw3VtMMgP7b-27" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="C-vyLk0tnHw3VtMMgP7b-23" vertex="1">
+          <mxGeometry y="60" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="C-vyLk0tnHw3VtMMgP7b-28" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="C-vyLk0tnHw3VtMMgP7b-27" vertex="1">
+          <mxGeometry width="30.000000000000114" height="180" as="geometry">
+            <mxRectangle width="30.000000000000114" height="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-vyLk0tnHw3VtMMgP7b-29" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Business_name&lt;/b&gt; NVARCHAR(50)&lt;/span&gt;&amp;nbsp; Not NuLL&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Reg_number&lt;/b&gt; INT NOT NULL&amp;nbsp;UNIQUE&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Owner_id &lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;INT NOT NULL UNIQUE FORIGN KEY&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Size_categoty&lt;/b&gt; NVARCHAR(10)&amp;nbsp; NOT NULL&lt;/span&gt;(Micro, Small, Medium)&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;b&gt;Established_on&lt;/b&gt; DATE DEFAULT SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Years_in_operation&lt;/b&gt; DATE check &amp;gt;=0&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Location&lt;/b&gt; NVARCHAR(50) NOT NULL&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Sector_id&lt;/b&gt; INT NOT NULL FORIGN KEY ----- Sector&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Created_at &lt;/b&gt;DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&amp;nbsp;Updated_at&lt;/b&gt; DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;/ul&gt;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;verticalAlign=top;html=1;" parent="C-vyLk0tnHw3VtMMgP7b-27" vertex="1">
+          <mxGeometry x="30.000000000000114" width="389.9999999999999" height="180" as="geometry">
+            <mxRectangle width="389.9999999999999" height="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WiBJf92-VvX8dwFLpb4G-9" value="Owners" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="190" width="510" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="WiBJf92-VvX8dwFLpb4G-10" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="WiBJf92-VvX8dwFLpb4G-9" vertex="1">
+          <mxGeometry y="30" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WiBJf92-VvX8dwFLpb4G-11" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="WiBJf92-VvX8dwFLpb4G-10" vertex="1">
+          <mxGeometry width="30.000000000000114" height="30" as="geometry">
+            <mxRectangle width="30.000000000000114" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WiBJf92-VvX8dwFLpb4G-12" value="OWNER_ID int  INDENTITY&#xa;(1,1) CLUSTERED INDEX " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=1;fontSize=11;" parent="WiBJf92-VvX8dwFLpb4G-10" vertex="1">
+          <mxGeometry x="30.000000000000114" width="479.9999999999999" height="30" as="geometry">
+            <mxRectangle width="479.9999999999999" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WiBJf92-VvX8dwFLpb4G-13" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="WiBJf92-VvX8dwFLpb4G-9" vertex="1">
+          <mxGeometry y="60" width="510" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="WiBJf92-VvX8dwFLpb4G-14" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="WiBJf92-VvX8dwFLpb4G-13" vertex="1">
+          <mxGeometry width="30.000000000000114" height="150" as="geometry">
+            <mxRectangle width="30.000000000000114" height="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WiBJf92-VvX8dwFLpb4G-15" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;First_name&lt;/b&gt; NVARCHAR(50)&lt;/span&gt;&amp;nbsp; Not NuLL&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&lt;b&gt;Last_name&lt;/b&gt;&amp;nbsp;NVARCHAR(50)&lt;/span&gt;&amp;nbsp; Not NuLL&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Date_of_birth&lt;/b&gt;&amp;nbsp;DATE NOT NULL&amp;nbsp;&lt;/span&gt;CHECK (DATEDIFF(YEAR, DOB, GETDATE()) &amp;gt;= 18)&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&amp;nbsp;Phone_no&amp;nbsp;&lt;/b&gt;INT NOT NULL&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Email&amp;nbsp;&lt;/b&gt;NVARCHAR(50)&amp;nbsp; NOT NULL UNIQUE&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;BVN&amp;nbsp;&lt;/b&gt;INT NOT NULL UNIQUE&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;b&gt;Credit_Score &lt;/b&gt;INT NOT NULL&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Created_at &lt;/b&gt;DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&amp;nbsp;Updated_at&lt;/b&gt; DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;/ul&gt;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;verticalAlign=top;html=1;" parent="WiBJf92-VvX8dwFLpb4G-13" vertex="1">
+          <mxGeometry x="30.000000000000114" width="479.9999999999999" height="150" as="geometry">
+            <mxRectangle width="479.9999999999999" height="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-4" value="Loans" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="180" width="580.0000000000001" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-5" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="7OepKoPYDnJFZ7VWNCiS-4" vertex="1">
+          <mxGeometry y="30" width="580.0000000000001" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-6" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="7OepKoPYDnJFZ7VWNCiS-5" vertex="1">
+          <mxGeometry width="30.000000000000114" height="30" as="geometry">
+            <mxRectangle width="30.000000000000114" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-7" value="LOAN_ID int   INDENTITY&#xa;(1,1) CLUSTERED INDEX " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=1;fontSize=11;" parent="7OepKoPYDnJFZ7VWNCiS-5" vertex="1">
+          <mxGeometry x="30.000000000000114" width="550" height="30" as="geometry">
+            <mxRectangle width="550" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-8" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="7OepKoPYDnJFZ7VWNCiS-4" vertex="1">
+          <mxGeometry y="60" width="580.0000000000001" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-9" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="7OepKoPYDnJFZ7VWNCiS-8" vertex="1">
+          <mxGeometry width="30.000000000000114" height="180" as="geometry">
+            <mxRectangle width="30.000000000000114" height="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-10" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;SME_ID&lt;/b&gt;&amp;nbsp;iNT &lt;/span&gt;Not NuLL FORIGN KEY&amp;nbsp;non-clustered index -----&amp;nbsp;&lt;span style=&quot;font-size: 12px; text-align: center;&quot;&gt;Small_Meduim_Enterprice&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;b&gt;Lender_id&amp;nbsp;&amp;nbsp;&lt;/b&gt;INT NOT NULL FORIGN KEY ------ LENDERS&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Amount_requested&lt;/b&gt;&amp;nbsp;DECIMAL(18,2)&amp;nbsp;NOT NULL CHECK (Amount_requested &amp;gt; 0)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&amp;nbsp;Amount_approved&amp;nbsp;&lt;/b&gt;DECIMAL(18,2)&amp;nbsp;NOT NULL&amp;nbsp;&lt;/span&gt;CHECK (AmountApproved &amp;gt;= 0)&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Puropose&amp;nbsp;&lt;/b&gt;NVARCHAR(100)&amp;nbsp; NOT NULL&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font&gt;&amp;nbsp;&lt;/font&gt;&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Interest_rate&amp;nbsp;&lt;/b&gt;DECIMAL(18,2)&amp;nbsp;&lt;font&gt;&amp;nbsp;&lt;font&gt;NOT NULL UNIQUE CHECK Interest_rate BETWEEN 0 AND 100&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;b&gt;Tenure&amp;nbsp;&lt;/b&gt;INT NOT NULL CHECK (Tenure &amp;gt;0)&lt;/li&gt;&lt;li&gt;&lt;b&gt;&amp;nbsp;Status&amp;nbsp; VARCHAR (50)&amp;nbsp;&lt;/b&gt;&amp;nbsp;NOT NULL CHECK (Status IN(&#39;Pending&#39;,&#39;Approved&#39;,&#39;Rejected&#39;,&#39;Closed&#39;))&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;b&gt;&amp;nbsp; Application_date &lt;/b&gt;DATE NOT NULL DEFAULT SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Created_at &lt;/b&gt;DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&amp;nbsp;Updated_at&lt;/b&gt; DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;/ul&gt;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;verticalAlign=top;html=1;" parent="7OepKoPYDnJFZ7VWNCiS-8" vertex="1">
+          <mxGeometry x="30.000000000000114" width="550" height="180" as="geometry">
+            <mxRectangle width="550" height="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-27" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;entryX=0.008;entryY=0.721;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="WiBJf92-VvX8dwFLpb4G-10" target="C-vyLk0tnHw3VtMMgP7b-24" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-30" y="330" as="sourcePoint" />
+            <mxPoint x="70" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-29" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.007;exitY=0.194;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="7OepKoPYDnJFZ7VWNCiS-5" edge="1" source="C-vyLk0tnHw3VtMMgP7b-27">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="490" y="340" as="sourcePoint" />
+            <mxPoint x="590" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1060" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-30" value="Repayments" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="155" width="580.0000000000001" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-31" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="7OepKoPYDnJFZ7VWNCiS-30" vertex="1">
+          <mxGeometry y="30" width="580.0000000000001" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-32" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="7OepKoPYDnJFZ7VWNCiS-31" vertex="1">
+          <mxGeometry width="30.000000000000114" height="30" as="geometry">
+            <mxRectangle width="30.000000000000114" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-33" value="Repayment_id int  INDENTITY&#xa;(1,1) CLUSTERED INDEX " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=1;fontSize=11;" parent="7OepKoPYDnJFZ7VWNCiS-31" vertex="1">
+          <mxGeometry x="30.000000000000114" width="550" height="30" as="geometry">
+            <mxRectangle width="550" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-34" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="7OepKoPYDnJFZ7VWNCiS-30" vertex="1">
+          <mxGeometry y="60" width="580.0000000000001" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-35" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="7OepKoPYDnJFZ7VWNCiS-34" vertex="1">
+          <mxGeometry width="30.000000000000114" height="100" as="geometry">
+            <mxRectangle width="30.000000000000114" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-36" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;LOAN_ID&amp;nbsp;&lt;/b&gt;iNT &lt;/span&gt;Not NuLL FORIGN KEY non-clustered index&amp;nbsp;&amp;nbsp;----- loans&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;b&gt;Amount_paid &lt;/b&gt;DECIMAL(18,2)&amp;nbsp;&amp;nbsp;NOT NULL CHECK (Amountpaid &amp;gt; 0)&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Payment_date&lt;/b&gt;&amp;nbsp;DATE NOT NULL&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&amp;nbsp;&lt;b&gt;Remaining_balance&lt;/b&gt; DECIMAL (18,2) NOT NULL&amp;nbsp;CHECK (RemainingBalance &amp;gt;= 0)&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Created_at &lt;/b&gt;DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&amp;nbsp;Updated_at&lt;/b&gt; DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;/ul&gt;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;verticalAlign=top;html=1;" parent="7OepKoPYDnJFZ7VWNCiS-34" vertex="1">
+          <mxGeometry x="30.000000000000114" width="550" height="100" as="geometry">
+            <mxRectangle width="550" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-37" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0.005;entryY=0.144;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7OepKoPYDnJFZ7VWNCiS-8" target="7OepKoPYDnJFZ7VWNCiS-34" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1190" y="340" as="sourcePoint" />
+            <mxPoint x="1290" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-46" value="Sector" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="690" width="580.0000000000001" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-47" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="7OepKoPYDnJFZ7VWNCiS-46" vertex="1">
+          <mxGeometry y="30" width="580.0000000000001" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-48" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="7OepKoPYDnJFZ7VWNCiS-47" vertex="1">
+          <mxGeometry width="30.000000000000114" height="30" as="geometry">
+            <mxRectangle width="30.000000000000114" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-49" value="Sector_id int   INDENTITY&#xa;(1,1) CLUSTERED INDEX " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=1;fontSize=11;" parent="7OepKoPYDnJFZ7VWNCiS-47" vertex="1">
+          <mxGeometry x="30.000000000000114" width="550" height="30" as="geometry">
+            <mxRectangle width="550" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-50" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="7OepKoPYDnJFZ7VWNCiS-46" vertex="1">
+          <mxGeometry y="60" width="580.0000000000001" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-51" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="7OepKoPYDnJFZ7VWNCiS-50" vertex="1">
+          <mxGeometry width="30.000000000000114" height="70" as="geometry">
+            <mxRectangle width="30.000000000000114" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-52" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;SectorName NVARCHAR(100) NOT NULL&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;b&gt;Created_at &lt;/b&gt;DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&amp;nbsp;Updated_at&lt;/b&gt; DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;/ul&gt;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;verticalAlign=top;html=1;" parent="7OepKoPYDnJFZ7VWNCiS-50" vertex="1">
+          <mxGeometry x="30.000000000000114" width="550" height="70" as="geometry">
+            <mxRectangle width="550" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-55" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;" parent="1" source="7OepKoPYDnJFZ7VWNCiS-46" target="C-vyLk0tnHw3VtMMgP7b-27" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-140" y="620" as="sourcePoint" />
+            <mxPoint x="-40" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-57" value="Cashflow" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="430" width="580.0000000000001" height="199.99999999999977" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-58" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="7OepKoPYDnJFZ7VWNCiS-57" vertex="1">
+          <mxGeometry y="30" width="580.0000000000001" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-59" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="7OepKoPYDnJFZ7VWNCiS-58" vertex="1">
+          <mxGeometry width="30.000000000000114" height="30" as="geometry">
+            <mxRectangle width="30.000000000000114" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-60" value="Cashflow_id int   INDENTITY&#xa;(1,1) CLUSTERED INDEX " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=1;fontSize=11;" parent="7OepKoPYDnJFZ7VWNCiS-58" vertex="1">
+          <mxGeometry x="30.000000000000114" width="550" height="30" as="geometry">
+            <mxRectangle width="550" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-61" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="7OepKoPYDnJFZ7VWNCiS-57" vertex="1">
+          <mxGeometry y="60" width="580.0000000000001" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-62" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="7OepKoPYDnJFZ7VWNCiS-61" vertex="1">
+          <mxGeometry width="30.000000000000114" height="130" as="geometry">
+            <mxRectangle width="30.000000000000114" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-63" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&lt;b&gt;SME_ID&lt;/b&gt;&amp;nbsp;iNT&amp;nbsp;&lt;/span&gt;Not NuLL FORIGN KEY non-clustered index&amp;nbsp;-----&amp;nbsp;&lt;span style=&quot;font-size: 12px; text-align: center;&quot;&gt;Small_Meduim_Enterprice&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12px; text-align: center;&quot;&gt;&lt;b&gt;TransactionType&lt;/b&gt; NVARCHAR(50) not null&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12px; text-align: center;&quot;&gt;&lt;b&gt;Transcation_date&lt;/b&gt; DATE NOT NULL&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12px; text-align: center;&quot;&gt;&lt;b&gt;Amount&lt;/b&gt; DECIMAL (18,2) NOT NULL CHECK (amount &amp;gt; 0)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12px; text-align: center;&quot;&gt;&lt;b&gt;Source&lt;/b&gt; NVARCHAR(50) CHECK (Source in(&lt;/span&gt;POS, mobile money, cash deposit, Others))&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;Created_at &lt;/b&gt;DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&amp;nbsp;Updated_at&lt;/b&gt; DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;/ul&gt;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;verticalAlign=top;html=1;" parent="7OepKoPYDnJFZ7VWNCiS-61" vertex="1">
+          <mxGeometry x="30.000000000000114" width="550" height="130" as="geometry">
+            <mxRectangle width="550" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-64" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;" parent="1" source="C-vyLk0tnHw3VtMMgP7b-27" target="7OepKoPYDnJFZ7VWNCiS-58" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-100" y="620" as="sourcePoint" />
+            <mxPoint y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-65" value="Lender" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+          <mxGeometry x="1290" y="350" width="610" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-66" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="7OepKoPYDnJFZ7VWNCiS-65" vertex="1">
+          <mxGeometry y="30" width="610" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-67" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="7OepKoPYDnJFZ7VWNCiS-66" vertex="1">
+          <mxGeometry width="30.000000000000114" height="30" as="geometry">
+            <mxRectangle width="30.000000000000114" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-68" value="Lender_id int   INDENTITY&#xa;(1,1) CLUSTERED INDEX " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=1;fontSize=11;" parent="7OepKoPYDnJFZ7VWNCiS-66" vertex="1">
+          <mxGeometry x="30.000000000000114" width="579.9999999999999" height="30" as="geometry">
+            <mxRectangle width="579.9999999999999" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-69" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="7OepKoPYDnJFZ7VWNCiS-65" vertex="1">
+          <mxGeometry y="60" width="610" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-70" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="7OepKoPYDnJFZ7VWNCiS-69" vertex="1">
+          <mxGeometry width="30.000000000000114" height="130" as="geometry">
+            <mxRectangle width="30.000000000000114" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-71" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&lt;b&gt;Name NVARCHAR(50)&lt;/b&gt;&amp;nbsp;&lt;/span&gt;Not NuLL&lt;/li&gt;&lt;li&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Type&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; NVARCHAR(50) NOT NULL CHECK (Type IN (&#39;Bank&#39;,&#39;Fintech&#39;,&#39;Cooperative, Goverment, Others&#39;)),&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;b style=&quot;font-size: 12px; text-align: center; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;LicenseNumber NVARCHAR(50)&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;Created_at &lt;/b&gt;DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;Updated_at&lt;/b&gt; DATETIME2 DEFAULT&amp;nbsp;&lt;/span&gt;SYSDATETIME()&lt;/li&gt;&lt;/ul&gt;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontSize=11;verticalAlign=top;html=1;" parent="7OepKoPYDnJFZ7VWNCiS-69" vertex="1">
+          <mxGeometry x="30.000000000000114" width="579.9999999999999" height="130" as="geometry">
+            <mxRectangle width="579.9999999999999" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7OepKoPYDnJFZ7VWNCiS-72" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;rounded=0;" parent="1" source="7OepKoPYDnJFZ7VWNCiS-8" target="7OepKoPYDnJFZ7VWNCiS-66" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1300" y="560" as="sourcePoint" />
+            <mxPoint x="1400" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
