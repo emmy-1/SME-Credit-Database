@@ -23,4 +23,4 @@ According to the PWC MSME Survey 2024, there’s an estimate of $32.2billion, an
 ---
 ## 🏗️ Sketch ERD (Entity Relationship Diagram)
 ![](Sketch/SME Database New.JPEG)
-
+Sketch/SME Database New.jpg
