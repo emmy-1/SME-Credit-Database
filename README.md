@@ -22,5 +22,5 @@ According to the PWC MSME Survey 2024, there’s an estimate of $32.2billion, an
 - Reduces default risk for lenders → increases confidence in Nigeria’s SME sector.
 ---
 ## 🏗️ Sketch ERD (Entity Relationship Diagram)
-![](Sketch/SME Database New.JPEG)
-Sketch/SME Database New.jpg
+![SME Database New](https://github.com/user-attachments/assets/4fe0c985-f2cb-4b13-9dc3-2d8766a3422d)
+
