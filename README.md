@@ -1,4 +1,5 @@
 <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/7a0012a7-da47-45bb-a616-3241efb94d71" />
+
 # SME-Credit-Database
 According to the PWC MSME Survey 2024, there’s an estimate of $32.2billion, an equivalent of ₦13 trillion of unmet demand for credit by Nigerian Micro, Small, and Medium Enterprises (MSME). Secondly According to the same study 35% of the businesses in Nigeria mentioned inadequate access to finance as their number one challenge. one of the major reason to this problem is that commercial banks tend to lend to larger firms, because smaller scale businesses generally struggle with weak documentation, financial infrastructure in terms of accessing credit information, weak debt resolution and loan recovery framework.
 
