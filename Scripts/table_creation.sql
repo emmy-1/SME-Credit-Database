@@ -1,7 +1,10 @@
 USE sme_credit;
+GO;
+CREATE SCHEMA msmes;
+GO;
 BEGIN TRY 
-	DROP TABLE IF EXISTS small_medium_enterprice;
-	CREATE TABLE small_medium_enterprice(
+	DROP TABLE IF EXISTS msmes.small_medium_enterprice;
+	CREATE TABLE msmes.small_medium_enterprice(
 		sme_id INT IDENTITY(1, 1) CONSTRAINT PK_sme PRIMARY KEY CLUSTERED,
 		business_name NVARCHAR(50) NOT NULL,
 		reg_number INT NOT NULL UNIQUE,
@@ -15,8 +18,8 @@ BEGIN TRY
 		updated_at DATETIME2 DEFAULT SYSDATETIME()
 	);
 
-	DROP TABLE IF EXISTS owner;
-	CREATE TABLE owner(
+	DROP TABLE IF EXISTS msmes.owner;
+	CREATE TABLE msmes.owner(
 		owner_id INT IDENTITY(1,1) CONSTRAINT PK_owner PRIMARY KEY CLUSTERED,
 		first_name NVARCHAR(50) NOT NULL,
 		last_name NVARCHAR(50) NOT NULL,
@@ -27,8 +30,8 @@ BEGIN TRY
 		created_at DATETIME2 DEFAULT SYSDATETIME(),
 		updated_at DATETIME2 DEFAULT SYSDATETIME()
 	);
-	DROP TABLE IF EXISTS loans
-	CREATE TABLE loans(
+	DROP TABLE IF EXISTS msmes.loans
+	CREATE TABLE msmes.loans(
 		loan_id INT IDENTITY(1,1) CONSTRAINT Pk_loans PRIMARY KEY CLUSTERED,
 		sme_id INT NOT NULL, -- CONSTRAINT FK_loans_sme FOREIGN KEY REFERENCES small_medium_enterprice(sme_id),
 		lender_id INT NOT NULL, -- CONSTRAINT FK_loans_lender FOREIGN KEY REFERENCES lender(lender_id) -- ADD A NON CLUSTERED INDEX,
@@ -42,8 +45,8 @@ BEGIN TRY
 		Created_at DATETIME2 DEFAULT SYSDATETIME(),
 		Updated_at DATETIME2 DEFAULT SYSDATETIME()
 	);
-	DROP TABLE IF EXISTS repayment
-	CREATE TABLE repayment(
+	DROP TABLE IF EXISTS msmes.repayment
+	CREATE TABLE msmes.repayment(
 		repayment_id INT IDENTITY(1,1) CONSTRAINT Pk_repayment PRIMARY KEY CLUSTERED,
 		loan_id INT NOT NULL, -- CONSTRAINT FOREIGN KEY REFERENCES loans(loan_id)  non-clustered index  ----- loans
 		amount_paid DECIMAL(18,2)  NOT NULL CHECK (amount_paid > 0),
@@ -53,8 +56,8 @@ BEGIN TRY
 		updated_at DATETIME2 DEFAULT SYSDATETIME()
 	);
 
-	DROP TABLE IF EXISTS lenders
-	CREATE TABLE lenders(
+	DROP TABLE IF EXISTS msmes.lenders
+	CREATE TABLE msmes.lenders(
 		lenders_name NVARCHAR(50) Not NuLL,
 		lenders_type NVARCHAR(50) NOT NULL CHECK (lenders_type IN ('Bank','Fintech','Cooperative, Goverment, individual, Others')),
 		license_number INT NULL,
@@ -62,15 +65,15 @@ BEGIN TRY
 		updated_at DATETIME2 DEFAULT SYSDATETIME()
 	);
 
-	DROP TABLE IF EXISTS sector
-	CREATE TABLE sector(
+	DROP TABLE IF EXISTS msmes.sector
+	CREATE TABLE msmes.sector(
 		sector_id INT IDENTITY(1,1) NOT NULL CONSTRAINT Pk_sector PRIMARY KEY CLUSTERED,
 		sector_name NVARCHAR(50) NOT NULL,
 		Created_at DATETIME2 DEFAULT SYSDATETIME(),
 		Updated_at DATETIME2 DEFAULT SYSDATETIME()
 	);
-	DROP TABLE IF EXISTS cashflow
-	CREATE TABLE cashflow(
+	DROP TABLE IF EXISTS msmes.cashflow
+	CREATE TABLE msmes.cashflow(
 		cashflow_id INT IDENTITY(1,1) CONSTRAINT Pk_cashflow PRIMARY KEY CLUSTERED,
 		sme_id INT NOT NULL, -- CONSTRAINT FOREIGN KEY non-clustered index REFERENCES small_medium_enterprice(sme_id),
 		transaction_type NVARCHAR(50) not null,
