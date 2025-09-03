@@ -23,4 +23,3 @@ CREATE DATABASE sme_credit;
 GO;
 USE sme_credit;
 GO;
-CREATE SCHEMA MSMEs;
