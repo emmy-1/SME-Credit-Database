@@ -23,3 +23,6 @@ CREATE DATABASE sme_credit;
 GO;
 USE sme_credit;
 GO;
+
+-- Add query store
+ALTER DATABASE sme_credit SET QUERY_STORE = ON (OPERATION_MODE = READ_WRITE);
