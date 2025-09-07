@@ -1,0 +1,18 @@
+SELECT TOP (1000) [RowNumber]
+      ,[EventClass]
+      ,[TextData]
+      ,[ApplicationName]
+      ,[NTUserName]
+      ,[LoginName]
+      ,[CPU]
+      ,[Reads]
+      ,[Writes]
+      ,[Duration]
+      ,[ClientProcessID]
+      ,[SPID]
+      ,[StartTime]
+      ,[EndTime]
+      ,[BinaryData]
+  FROM [sme_credit].[msmes].[trace_data]
+  WHERE CPU is not null
+  order by CPU DESC
