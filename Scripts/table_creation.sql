@@ -7,13 +7,16 @@ BEGIN TRY
 	CREATE TABLE msmes.small_medium_enterprice(
 		sme_id INT IDENTITY(1, 1) CONSTRAINT PK_sme PRIMARY KEY CLUSTERED,
 		business_name NVARCHAR(50) NOT NULL,
-		reg_number INT NOT NULL UNIQUE,
+		rc_number INT NOT NULL UNIQUE,
 		owner_id INT NOT NULL UNIQUE,
-		size_category NVARCHAR(50) NOT NULL CHECK (size_category IN ('micro, small, medium')),
-		established_on DATE	NOT NULL DEFAULT SYSDATETIME(),
-		years_of_operation INT NOT NULL CHECK(years_of_operation > 0),
-		location NVARCHAR(50) NOT NULL,
+		size_category NVARCHAR(50) NOT NULL CHECK (size_category IN ('micro', 'small', 'medium')),
+		reg_date  DATE	NOT NULL DEFAULT SYSDATETIME(),
+		address NVARCHAR(100) NOT NULL,
+		city NVARCHAR(50) NOT NULL, 
+		state NVARCHAR(50) NOT NULL,
+		country NVARCHAR(50) NOT NULL DEFAULT 'nigeria', 
 		sector_id INT NOT NULL,
+		status NVARCHAR(10) NOT NULL CHECK (status IN('active','inactive')),--
 		created_at DATETIME2 DEFAULT SYSDATETIME(),
 		updated_at DATETIME2 DEFAULT SYSDATETIME()
 	);
@@ -24,9 +27,9 @@ BEGIN TRY
 		first_name NVARCHAR(50) NOT NULL,
 		last_name NVARCHAR(50) NOT NULL,
 		date_of_birth DATE NOT NULL CHECK(DATEDIFF(YEAR,date_of_birth, GETDATE()) >= 18),
-		phone_no INT NOT NULL UNIQUE,
+		phone_no BIGINT NOT NULL UNIQUE,
 		email NVARCHAR(50) NOT NULL UNIQUE,
-		bvn INT NOT NULL UNIQUE,
+		bvn BIGINT NOT NULL UNIQUE,
 		created_at DATETIME2 DEFAULT SYSDATETIME(),
 		updated_at DATETIME2 DEFAULT SYSDATETIME()
 	);
@@ -40,7 +43,7 @@ BEGIN TRY
 		purpose NVARCHAR(100) NOT NULL,
 		interest_rate DECIMAL(18,2)  NOT NULL  CHECK( interest_rate BETWEEN 0 AND 100),
 		tenure INT NOT NULL CHECK(tenure >0),
-		current_status NVARCHAR(50)  NOT NULL CHECK (current_status IN('Pending,Approved,Rejected,Closed')),
+		current_status NVARCHAR(50)  NOT NULL CHECK (current_status IN('Pending','Approved','Rejected','Closed')),
 		application_date DATE NOT NULL DEFAULT SYSDATETIME(),
 		Created_at DATETIME2 DEFAULT SYSDATETIME(),
 		Updated_at DATETIME2 DEFAULT SYSDATETIME()
@@ -60,7 +63,7 @@ BEGIN TRY
 	CREATE TABLE msmes.lenders(
 		lenders_id INT IDENTITY(1,1) NOT NULL CONSTRAINT Pk_lenders PRIMARY KEY CLUSTERED,
 		lenders_name NVARCHAR(50) Not NuLL,
-		lenders_type NVARCHAR(50) NOT NULL CHECK (lenders_type IN ('Bank','Fintech','Cooperative, Goverment, individual, Others')),
+		lenders_type NVARCHAR(50) NOT NULL CHECK (lenders_type IN ('Bank','Fintech','Cooperative', 'Goverment', 'individual', 'Others')),
 		license_number INT NULL,
 		created_at DATETIME2 DEFAULT SYSDATETIME(),
 		updated_at DATETIME2 DEFAULT SYSDATETIME()
@@ -80,7 +83,7 @@ BEGIN TRY
 		transaction_type NVARCHAR(50) not null,
 		transcation_date DATE NOT NULL ,
 		amount DECIMAL (18,2) NOT NULL CHECK (amount > 0),
-		source NVARCHAR(50) NOT NULL CHECK (source in('pos, mobile, money, cash, deposit, others')),
+		source NVARCHAR(50) NOT NULL CHECK (source in('pos', 'mobile', 'money', 'cash', 'deposit', 'others')),
 		Created_at DATETIME2 DEFAULT SYSDATETIME(),
 		Updated_at DATETIME2 DEFAULT SYSDATETIME()
 	)
@@ -108,3 +111,21 @@ ADD CONSTRAINT Fk_repayment_loans FOREIGN KEY(loan_id) REFERENCES msmes.loans(lo
 
 ALTER TABLE msmes.cashflow 
 ADD CONSTRAINT Fk_cashflow_small_medium_enterprice FOREIGN KEY(sme_id) REFERENCES msmes.small_medium_enterprice(sme_id)
+
+--	DROP CONSTAINT 
+ALTER TABLE msmes.small_medium_enterprice
+DROP CONSTRAINT FK_sme_owner, FK_sme_sector
+
+ALTER TABLE  msmes.loans 
+DROP CONSTRAINT FK_loans_sme, FK_loans_lender
+
+ALTER TABLE  msmes.repayment
+DROP CONSTRAINT Fk_repayment_loans 
+
+ALTER TABLE  msmes.cashflow 
+DROP CONSTRAINT Fk_cashflow_small_medium_enterprice
+
+
+-- ADDED A NEW COLUMN TO msmes.owner table called gender
+ALTER TABLE msmes.owner
+ADD gender NVARCHAR(50) check (gender in('male', 'female'))
