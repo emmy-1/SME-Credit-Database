@@ -128,30 +128,20 @@ GO
 
 
 EXEC insert_into_owner_sme_sector
-    @first_name = 'Musa',
-    @last_name = ' Busari',
-    @date_of_birth = '1971-03-28',
-    @phone_no = 2349028692688,
-    @email = 'akanni16@hotmail.com',
-    @bvn = 23975614556,
+    @first_name = 'Olufunmi ',
+    @last_name = 'Ekwueme',
+    @date_of_birth = '1984-12-22',
+    @phone_no = 2348140253436 ,
+    @email = 'zwilcox@olufeyikemi.biz',
+    @bvn = 20030108929,
     @gender = 'male',
-    @business_name = 'WICHTECH INDUSTRIES LIMITED',
-    @rc_number = 1802351,
-    @size_category = 'medium',
-    @reg_date = '2021-05-04',
-    @address = '5 Wema Terrace 2-9 Udi Street, Ikoyi, Lagos Nigeria',
-    @city = 'Ikoyi',
-    @state = 'Lagos',
+    @business_name = 'SPARK LTD',
+    @rc_number =  8809733,
+    @size_category = 'micro',
+    @reg_date = '2025-09-10',
+    @address = 'Km40, Abeokuta Expressway, Opp. Shoprite, Sango Otta, Ogun State',
+    @city = 'Sango Otta',
+    @state = 'Ogun',
     @country = 'Nigeria',
-    @sector_name = 'General Contracts',
+    @sector_name = 'Production And Distribution Of Renewable Energy',
     @status = 'active';
-
-
-
-select * from msmes.owner
-select * from msmes.small_medium_enterprice
-select * from msmes.sector
-
-
-
-
